@@ -1,4 +1,4 @@
-FROM openjdk8
+FROM openjdk:8
 LABEL author=artifactory
 RUN curl -uadmin:AP3CsHGB7wnvwN2A6zmJA8187fe -O "http://100.27.25.190:8081/artifactory/ravikiranrepo/http://100.27.25.190:8081/artifactory/ravikiranrepo/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar"
 CMD ["java", "-jar", "spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar"]
